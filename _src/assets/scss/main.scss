@@ -1,6 +1,14 @@
 *, *::before, *::after{
     margin: 0;
     padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image:linear-gradient(to bottom, #364852, #364852, #1b2429);
+    overflow-x: hidden;
 }
 @import 'core/settings';
-@import 'components/header'
+@import 'layout/header';
+@import 'layout/main-section';
