@@ -11,3 +11,8 @@
     
     color:#F1EDEE;
 }
+@media all and (min-width:750px) and (orientation: landscape){
+    .wrapper--hero__image{
+        background: url(../images/emburriaderos.png) no-repeat center;
+    }
+}
