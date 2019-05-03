@@ -2,12 +2,15 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-
 }
 
 body{
-    background-image:linear-gradient(to bottom, #364852, #364852, #1b2429);
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+.central--column{
+    max-width: 1300px;
 }
 @import 'core/settings';
 @import 'layout/header';
