@@ -10,7 +10,7 @@
     font-size: 25px;    
     color:#F1EDEE;
     overflow: hidden;
-    .default--img{
+    .upper--img{
         position: absolute;
         top:0;
         left:0;
@@ -35,6 +35,9 @@
             position: absolute;
             z-index: -2;
             background-size: cover;
+            left: -250px;
+            top: -150px;
+        
         }
         .mid--img__high{
             width: 1200px;
@@ -43,7 +46,7 @@
             z-index:-3;
             background: url(../images/barranca.png) no-repeat;
             background-size: cover;
-            top: 25%;
+            top:150px;
             right:0;
         }
         .mid--img__low{
@@ -53,8 +56,8 @@
             z-index:-4;
             background: url(../images/guarramillas.png) no-repeat;
             background-size: cover;
-            top: 55%;
             right: 0;
+            top:330px;
         }
         .bottom--img{
             width: 246px;
@@ -63,8 +66,14 @@
             z-index: -5;
             background: url(../images/bola.png) no-repeat;
             background-size: cover;
-            top: 38%;
             left: 60%;
+            top:250px;
         }
+    }
+}
+@media (min-width:1100px){
+    .bottom--img{
+        left:60%;
+        top:230px;
     }
 }
