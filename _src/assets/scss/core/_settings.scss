@@ -1,1 +1,28 @@
-$color-white: #f3f4f5;
+*, *::before, *::after{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  background-image:linear-gradient(to bottom, #fff, #1b2429);
+}
+.central--column{
+  max-width: 1500px;
+}
+
+.highlight{
+  font-size: 18px;
+  font-weight: 700;
+}
+.info-title{
+  font-family: 'Dosis', sans-serif;
+  color:#F1EDEE;
+  margin: 20px 0;
+}
+.item-title{
+  margin-bottom: 15px;
+}

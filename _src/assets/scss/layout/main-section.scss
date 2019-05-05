@@ -4,32 +4,27 @@
     align-items: center;
     background-image:linear-gradient(to bottom, #364852, #364852, #1b2429);
     margin-top: -2px;
+    @media (min-width:768px) and (orientation: landscape){
+        flex-direction: row;
+    }
 }
 
 .info-section{
-    margin: 25px 15px;
     width: 80%;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius:15px;
-    .info-title{
-        font-family: 'Caveat', cursive;
-        color:#F1EDEE;
-        padding: 15px;
+    @media (min-width:768px) and (orientation: landscape){
+        width:60%;
+        margin-left: 10%;
     }
     .item{
         border-bottom: 1px solid #1B2429;
         width: 95%;
         min-height: 100px;
         list-style: none;
-        padding:15px;
+        padding: 20px 0;
         font-family: 'Dosis', sans-serif;
         color:#F1EDEE;
-    }
-    .highlight{
-        font-size: 18px;
-        font-weight: 700;
     }
 }
