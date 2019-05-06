@@ -1,51 +1,56 @@
-<form action="https://formspree.io/patriciarozada@gmail.com" method="post">
-  <fieldset class="personal-info">
-    <h3 class="personal-info">Información personal</h3>
-    <label for="full-name">Nombre completo:</label>
-    <input type="text" name="full-name" id="full-name" placeholder="Pepa Pérez" required>
-    <label for="email">E-mail:</label>
-    <input type="email" name="email" id="email" placeholder="pepita@mail.com" required>
-    <label for="coche">Dispongo de vehículo propio:</label>
-    <div>
-      <label for="has-own-car">
-        <input id="has-own-car" type="radio" value="has-own-car" name="vehicle" />
-        Sí
-      </label>
-    </div>
-    <div>
-      <label for="not-own-car">
-        <input id="not-own-car" type="radio" value="not-own-car" name="vehicle" />
-        No
-      </label>
-    </div>
-    <label for="coche">Me apetece probar la escalada:</label>
-    <div>
-      <label for="climbs">
-        <input id="climbs" type="radio" value="climbs" name="climbing" />
-        Sí
-      </label>
-    </div>
-    <div>
-      <label for="not-climb">
-        <input id="not-climb" type="radio" value="not-climb" name="climbing" />
-        No
-      </label>
-    </div>
-    <div>
-        <label for="maybe-climb">
-          <input id="maybe-climb" type="radio" value="maybe-climb" name="climbing" />
-          A lo mejor me animo
-        </label>
+<div class="form-wrapper">
+  <form action="https://formspree.io/patriciarozada@gmail.com" method="post">
+    <fieldset class="personal-info">
+      <h3 class="personal-info">Información personal</h3>
+      <label for="full-name">Nombre completo:</label>
+      <input type="text" name="full-name" id="full-name" placeholder="Pepa Pérez" required>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" placeholder="pepita@mail.com" required>
+      <div class="choice">
+        <label for="coche">Dispongo de vehículo propio:</label>
+        <div class="radio">
+          <label for="has-own-car">
+            <input id="has-own-car" type="radio" value="has-own-car" name="vehicle" />
+            Sí
+          </label>
+        </div>
+        <div class="radio">
+          <label for="not-own-car">
+            <input id="not-own-car" type="radio" value="not-own-car" name="vehicle" />
+            No
+          </label>
+        </div>
+        <label for="coche">Me apetece probar la escalada:</label>
+        <div class="radio">
+          <label for="climbs">
+            <input id="climbs" type="radio" value="climbs" name="climbing" />
+            Sí
+          </label>
+        </div>
+        <div class="radio">
+          <label for="not-climb">
+            <input id="not-climb" type="radio" value="not-climb" name="climbing" />
+            No
+          </label>
+        </div>
+        <div class="radio">
+          <label for="maybe-climb">
+            <input id="maybe-climb" type="radio" value="maybe-climb" name="climbing" />
+            A lo mejor me animo
+          </label>
+        </div>
       </div>
-  </fieldset>
-  <fieldset class="emergency">
-    <h3 class="emergency-info">En caso de emergencia, avisar a:</h3>
-    <label for="er-contact">Nombre:</label>
-    <input type="text" name="er-contact" id="er-contact" required>
-    <label for="er-tel">Teléfono</label>
-    <input type="tel" name="er-tel" id="er-tel" required>
-    <label for="extra-info">Otra información de interés:</label>
-    <textarea name="extra-info" id="extra-info" cols="30" rows="10"></textarea>
-  </fieldset>
-  <input type="submit" value="Enviar">
-</form>
+    </fieldset>
+    <fieldset class="emergency">
+      <h3 class="emergency-info">En caso de emergencia, avisar a:</h3>
+      <p>(solamente por precaución)</p>
+      <label for="er-contact">Nombre:</label>
+      <input type="text" name="er-contact" id="er-contact" required placeholder="Pepa (madre)">
+      <label for="er-tel">Teléfono</label>
+      <input type="tel" name="er-tel" id="er-tel" required placeholder="666666666">
+      <label for="extra-info">Otra información de interés:</label>
+      <textarea name="extra-info" id="extra-info" cols="30" rows="10" placeholder="Por ejemplo: me dan alergia las avispas o tomo medicación para ta cosa y la llevo aquí... "></textarea>
+      <input class ="button" type="submit" value="Enviar">
+    </fieldset>
+  </form>
+</div>

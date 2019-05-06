@@ -1,0 +1,47 @@
+.form-wrapper{
+  background-color: #1b2429;
+  width:100%;
+}
+form{
+  appearance: none;
+  border-top: 1px solid #F1EDEE;
+  font-family: 'Dosis', sans-serif;
+  color:#F1EDEE;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b2429;
+  @media (min-width:768px) and (orientation: landscape){
+    width:90%;
+    margin-left: 10%;
+    flex-direction: row;
+  }
+
+  fieldset{
+    appearance: none;
+    border: 0;
+    padding: 0;
+    margin: 10%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+
+    input{
+      border: 1px solid #F1EDEE;
+      border-radius: 10px;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  .button{
+    height:30px;
+    width:150px;
+    border-radius: 10px;
+    background-color: rgb(158, 2, 36);
+    border: 1px solid #F1EDEE;
+    align-self: center;
+    font-family: 'Dosis', sans-serif;
+    color: #F1EDEE;
+    margin-top: 30px;
+  }
+}
+
